@@ -26,14 +26,14 @@ const routes = [
                 component: () => import( '../views/Task.vue')
             },
             {
-                path: '/index/taskchild',
-                name: 'TaskChild',
-                component: () => import( '../views/TaskChild.vue')
-            },
-            {
                 path: '/index/chart',
                 name: 'Chart',
                 component: () => import( '../views/Chart.vue')
+            },
+            {
+                path: '/index/set',
+                name: 'Set',
+                component: () => import( '../views/Set.vue')
             }
             ]
     },
