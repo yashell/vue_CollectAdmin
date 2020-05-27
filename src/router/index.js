@@ -1,41 +1,50 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home
+        name: 'Login',
+        component: () => import( '../views/Login.vue')
     },
     {
-        path: '/home',
-        name: 'Home',
-        component: () => import( '../views/Home.vue')
+        path: '/index',
+        name: 'Index',
+        component: () => import( '../views/Index.vue'),
+        children: [
+            {
+                path: '/index/',
+                name: 'Home',
+                component: () => import( '../views/Home.vue')
+            },
+            {
+                path: '/index/task',
+                name: 'Task',
+                component: () => import( '../views/Task.vue')
+            },
+            {
+                path: '/index/taskchild',
+                name: 'TaskChild',
+                component: () => import( '../views/TaskChild.vue')
+            },
+            {
+                path: '/index/chart',
+                name: 'Chart',
+                component: () => import( '../views/Chart.vue')
+            }
+            ]
     },
-    {
-        path: '/task',
-        name: 'Task',
-        component: () => import( '../views/Task.vue')
-    },
-    {
-        path: '/taskchild',
-        name: 'TaskChild',
-        component: () => import( '../views/TaskChild.vue')
-    },
-    {
-        path: '/chart',
-        name: 'Chart',
-        component: () => import( '../views/Chart.vue')
-    }
+
 ]
 
 const router = new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     base: process.env.BASE_URL,
     routes
 })
+
 
 export default router

@@ -7,6 +7,7 @@ import 'ant-design-vue/dist/antd.css';
 import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/index.css'
+import VueParticles from 'vue-particles'
 
 Vue.use(VXETable)
 
@@ -16,6 +17,7 @@ Vue.prototype.$XModal = VXETable.modal
 Vue.config.productionTip = false
 
 Vue.use(Antd);
+Vue.use(VueParticles)
 
 new Vue({
   router,
