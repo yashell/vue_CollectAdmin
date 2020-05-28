@@ -42,6 +42,7 @@
                 :loading="tableSet.loading"
                 auto-resize
                 border
+                stripe
                 highlight-current-row
                 ref="xTable"
                 resizable
@@ -181,6 +182,22 @@
             },
             async loadData() {
                 this.dataLisst = [
+                    {
+                        'name': '孙阳',
+                        'id': '533001199001120390',
+                        'tel': '13887809918',
+                        'result': '盗抢',
+                        'time': '2020-03-20 12:00:08',
+                        'task': '电动车行业门店采集'
+                    },
+                    {
+                        'name': '孙阳',
+                        'id': '533001199001120390',
+                        'tel': '13887809918',
+                        'result': '盗抢',
+                        'time': '2020-03-20 12:00:08',
+                        'task': '电动车行业门店采集'
+                    },
                     {
                         'name': '孙阳',
                         'id': '533001199001120390',

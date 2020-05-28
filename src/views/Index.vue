@@ -8,7 +8,7 @@
                 <div class="logo">
 
                     <img :src="imgUrl" alt="Vue logo">
-                    <label>王磊  002630</label>
+                    <label>王磊 002630</label>
                     <span>昆明市公安局科信支队</span>
                 </div>
                 <a-menu
@@ -83,7 +83,8 @@
                                             <span>你收到的信息</span>
                                         </template>
                                         <div>
-                                            <a-badge :count="8" :number-style="{ backgroundColor: '#1ab394' }" :offset="[-5,2]"
+                                            <a-badge :count="8" :number-style="{ backgroundColor: '#1ab394' }"
+                                                     :offset="[-5,2]"
                                                      style="margin-top: 5px;">
                                                 <a-avatar icon="bell"
                                                           style="backgroundColor:#fff; color: #999c9e;"/>
@@ -139,7 +140,7 @@
         name: 'Index',
         data() {
             return {
-                imgUrl: require("@/"+"/assets/user.png"),
+                imgUrl: require("@/" + "/assets/user.png"),
                 collapsed: false,
                 styleName: '万能采集系统管理平台',
                 welcome: '欢迎登录管理系统 管理员',
@@ -210,24 +211,27 @@
         padding-left: 30px;
         padding-top: 40px;
     }
-    #components-layout-demo-custom-trigger .logo span{
+
+    #components-layout-demo-custom-trigger .logo span {
         color: #77827b;
         width: 100%;
         float: left;
     }
-    #components-layout-demo-custom-trigger .logo label{
+
+    #components-layout-demo-custom-trigger .logo label {
         color: #fff;
         width: 100%;
         font-size: 20px;
         padding: 3px 0px;
         float: left;
     }
-    #components-layout-demo-custom-trigger .logo img{
+
+    #components-layout-demo-custom-trigger .logo img {
         width: 60px;
         height: 60px;
         border: 1px solid #ccc;
         background: #fff;
-        border-radius:50%;
+        border-radius: 50%;
         float: left;
     }
 
@@ -359,14 +363,14 @@
     }
 
 
-    .search{
+    .search {
         line-height: 50px;
 
     }
 
 
-    :global{
-        .ant-menu-dark{
+    :global {
+        .ant-menu-dark {
             background: #ff4f02 !important;
         }
     }
